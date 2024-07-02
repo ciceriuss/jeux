@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('fond.webp'); /* Chemin vers votre image de fond */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+#menu h1 {
+    margin-bottom: 20px;
+}
+
+#menu form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#menu input, #menu button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#menu button {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#menu button:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: translateY(-3px);
+}
+
+#menu button:active {
+    transform: translateY(0);
+}
+
+#game {
+    display: none;
+}
+
+#game-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#player-name {
+    font-size: 1.2em;
+}
+
+#save-game {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#save-game:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: translateY(-3px);
+}
+
+#save-game:active {
+    transform: translateY(0);
+}
+
+#status {
+    margin-top: 20px;
+}
+
+#story {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.choice {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.choice:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: translateY(-3px);
+}
+
+.choice:active {
+    transform: translateY(0);
+}
